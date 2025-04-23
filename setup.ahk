@@ -3,8 +3,6 @@ SetWorkingDir %A_ScriptDir%
 
 ; === Load Settings ===
 IniRead, inGameSens, settings.ini, Settings, InGameSensitivity, 2.5
-IniRead, mouseDPI, settings.ini, Settings, MouseDPI, 800
-IniRead, windowsCursorSpeed, settings.ini, Settings, WindowsCursorSpeed, 10
 IniRead, normalYawSpeed, settings.ini, Settings, NormalYawSpeed, 180
 IniRead, slowYawSpeed, settings.ini, Settings, SlowYawSpeed, 90
 IniRead, slowKey, settings.ini, Settings, SlowKey, LShift
@@ -18,12 +16,6 @@ Gui, Font, s10
 
 Gui, Add, Text,, In-Game Sensitivity (0.1 - 10.0):
 Gui, Add, Edit, vInGameSensEdit w200, %inGameSens%
-
-Gui, Add, Text,, Mouse Sensitivity (DPI) (1 - 5000):
-Gui, Add, Edit, vMouseDPIEdit w200, %mouseDPI%
-
-Gui, Add, Text,, Windows Cursor Speed (1 - 20):
-Gui, Add, Edit, vWindowsCursorSpeed w200, %windowsCursorSpeed%
 
 Gui, Add, Text,, Normal Yaw Speed (0 - 720):
 Gui, Add, Edit, vNormalYawSpeedEdit w200, %normalYawSpeed%
@@ -55,7 +47,7 @@ Gui, Font  ; Reset font
 Gui, Add, Button, gRunMainScript w100, Run
 
 ; --- Show GUI ---
-Gui, Show, w300 h620, Turnbinds Settings
+Gui, Show, w300 h500, Turnbinds Settings
 return
 
 ; --- Open Hyperlink ---
@@ -69,8 +61,6 @@ RunMainScript:
 
     ; Save settings
     IniWrite, %InGameSensEdit%, settings.ini, Settings, InGameSensitivity
-    IniWrite, %MouseDPIEdit%, settings.ini, Settings, MouseDPI
-    IniWrite, %WindowsCursorSpeed%, settings.ini, Settings, WindowsCursorSpeed
     IniWrite, %NormalYawSpeedEdit%, settings.ini, Settings, NormalYawSpeed
     IniWrite, %SlowYawSpeedEdit%, settings.ini, Settings, SlowYawSpeed
     IniWrite, %SlowKeyEdit%, settings.ini, Settings, SlowKey

@@ -5,23 +5,21 @@ SetBatchLines -1
 
 ; === Load Settings ===
 IniRead, inGameSens, settings.ini, Settings, InGameSensitivity, 2.5
-IniRead, mouseDPI, settings.ini, Settings, MouseDPI, 800
-IniRead, windowsCursorSpeed, settings.ini, Settings, WindowsCursorSpeed, 10
-IniRead, normalYawSpeed, settings.ini, Settings, NormalYawSpeed, 180
-IniRead, slowYawSpeed, settings.ini, Settings, SlowYawSpeed, 90
-IniRead, slowKey, settings.ini, Settings, SlowKey, LShift
 IniRead, toggleKey, settings.ini, Settings, ToggleKey, LAlt
 IniRead, leftBind, settings.ini, Settings, LeftBind, LButton
 IniRead, rightBind, settings.ini, Settings, RightBind, RButton
 IniRead, tickRate, settings.ini, Settings, TickRate, 128
 IniRead, cS2Scale, settings.ini, Settings, CS2Scale, 2.3528
+IniRead, normalYawSpeed, settings.ini, Settings, NormalYawSpeed, 180
+IniRead, slowYawSpeed, settings.ini, Settings, SlowYawSpeed, 90
+IniRead, slowKey, settings.ini, Settings, SlowKey, LShift
 IniRead, forceWindowTitle, settings.ini, Settings, ForceWindowTitle, 1
 IniRead, windowTitle, settings.ini, Settings, WindowTitle, "Counter-Strike 2"
 
 ; === Calculate mouse delta per tick ===
 tickInterval := 1000 / tickRate
-normalMouseDelta := ((cS2Scale * windowsCursorSpeed * mouseDPI * inGameSens * normalYawSpeed * tickInterval / 1000) / 360)
-slowMouseDelta := ((cS2Scale * windowsCursorSpeed * mouseDPI * inGameSens * slowYawSpeed * tickInterval / 1000) / 360)
+normalMouseDelta := ((cS2Scale * inGameSens * normalYawSpeed * tickInterval / 1000) / 360)
+slowMouseDelta := ((cS2Scale * inGameSens * slowYawSpeed * tickInterval / 1000) / 360)
 mouseDelta := normalMouseDelta
 
 ; === State flags ===
