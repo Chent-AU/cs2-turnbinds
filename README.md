@@ -18,4 +18,10 @@ The slow speed key will make the turnbinds turn at the slower yaw rate while hel
 By default, the turnbinds will only work when the `Counter-Strike 2` window is focused, you can disabled this or change the required window title in the `settings.ini` file.
 
 ### Warning
-These turnbinds cannot get you banned from Counter-Strike. AHK is a known program to valve and they are aware of its use in both legitimate and illegitimate CS related programs. There are rumours online that using AHK can lower your trust factor in competitive play, this has not been confirmed and has been denied by Valve.
+These turnbinds cannot get you banned from Counter-Strike. AHK is a known program to valve and they are aware of its use in both legitimate and illegitimate CS related programs.
+However
+- VACnet is a black box. no one knows exactly what it does, but we can make educated guesses
+- a few people, even a bunch, saying "i did X for Y period of time and didn't notice my trust change" is meaningless when there are so many factors at play
+- unless a valve employee directly confirmed it, it's not confirmed
+
+Cheats use simulated mouse input. this uses simulated mouse input. This and similar programs have been used with seemingly no effect on trust factor, **however** the only way to be **certain** it wont lower your trust is to not use it.
