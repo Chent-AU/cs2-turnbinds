@@ -11,4 +11,6 @@ For example, if the `CS2Scale` value was set to 3.5 and it takes you 12 seconds 
 
 #### How to use:
 Upon first use, run the `setup.ahk` file, it will prompt you for inputs about your binds, sensitivty and toggle keys. Press run to start.
-After setting your binds, you can just run the `turnbinds.ahk` file to enable to script. The script will start disabled, and can be toggled on and off by using your `Toggle Key`
+After setting your binds, you can just run the `turnbinds.ahk` file to enable to script. The script will start disabled, and can be toggled on and off by using your `Toggle Key`.
+
+The slow speed key will make the turnbinds turn at the slower yaw rate while held, otherwise the normal yaw speed will be used.
