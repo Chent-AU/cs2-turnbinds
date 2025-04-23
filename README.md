@@ -20,8 +20,8 @@ By default, the turnbinds will only work when the `Counter-Strike 2` window is f
 ### Warning
 These turnbinds cannot get you banned from Counter-Strike. AHK is a known program to valve and they are aware of its use in both legitimate and illegitimate CS related programs.
 However
-- VACnet is a black box. no one knows exactly what it does, but we can make educated guesses
-- a few people, even a bunch, saying "i did X for Y period of time and didn't notice my trust change" is meaningless when there are so many factors at play
-- unless a valve employee directly confirmed it, it's not confirmed
+- VACnet is a black box. no one knows exactly what it does, but we can make educated guesses. Valve have stated that trust factor does not effect VACnet ([source](https://www.youtube.com/watch?v=ObhK8lUfIlc&t=751s)).
+- A few people, or even many players, saying "i did X for Y period of time and didn't notice my trust change" is not definitive when there are many factors at play.
+- Unless a valve employee directly confirms something, it's not confirmed.
 
 Cheats use simulated mouse input. this uses simulated mouse input. This and similar programs have been used with seemingly no effect on trust factor, **however** the only way to be **certain** it wont lower your trust is to not use it, at the same time, its not guaranteed it WILL lower your trust factor.
