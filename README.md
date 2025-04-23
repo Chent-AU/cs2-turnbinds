@@ -14,3 +14,5 @@ Upon first use, run the `setup.ahk` file, it will prompt you for inputs about yo
 After setting your binds, you can just run the `turnbinds.ahk` file to enable to script. The script will start disabled, and can be toggled on and off by using your `Toggle Key`.
 
 The slow speed key will make the turnbinds turn at the slower yaw rate while held, otherwise the normal yaw speed will be used.
+
+By default, the turnbinds will only work when the `Counter-Strike 2` window is focused, you can disabled this or change the required window title in the `settings.ini` file.
