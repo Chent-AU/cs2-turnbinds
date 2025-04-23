@@ -4,10 +4,7 @@ This program works by using [Auto Hotkey](https://www.autohotkey.com).
 This is required to run the turnbinds.
 
 It simulates mouse movement at a default tick rate of 256Hz. This can be changed in the settings.ini file.
-It combines all mouse sensitivity multipliers (DPI, in-game sensitivity, windows cursor speed) and uses them to calculate the mouse movement distance per tick based on a constant multiplier specialised for CS2 yaw.
-This CS2 Multiplier needs to be recalibrated for varying game resolutions, it is pre-calibrated for a 1920x1080 game window.
-To recalibrate, simply set your yaw speed to 36, time exactly how many seconds it takes to complete a complete spin (360 degrees) and divide this number by 10. Then multiply the existing `CS2Scale` in the `settings.ini` file by that result.
-For example, if the `CS2Scale` value was set to 3.5 and it takes you 12 seconds to complete a spin, your new `CS2Scale` should be  `12 / 10 * 3.5 = 4.2`.
+It uses a pre-calibrated magic number to translate ingame sensitivity into yaw.
 
 ### How to use:
 Upon first use, run the `setup.ahk` file, it will prompt you for inputs about your binds, sensitivty and toggle keys. Press run to start.
