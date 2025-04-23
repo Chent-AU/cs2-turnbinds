@@ -24,4 +24,4 @@ However
 - a few people, even a bunch, saying "i did X for Y period of time and didn't notice my trust change" is meaningless when there are so many factors at play
 - unless a valve employee directly confirmed it, it's not confirmed
 
-Cheats use simulated mouse input. this uses simulated mouse input. This and similar programs have been used with seemingly no effect on trust factor, **however** the only way to be **certain** it wont lower your trust is to not use it.
+Cheats use simulated mouse input. this uses simulated mouse input. This and similar programs have been used with seemingly no effect on trust factor, **however** the only way to be **certain** it wont lower your trust is to not use it, at the same time, its not guaranteed it WILL lower your trust factor.
